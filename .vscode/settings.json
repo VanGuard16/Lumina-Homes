@@ -1,0 +1,7 @@
+{
+  "css.customData": ["./tailwind.css-data.json"],
+  "tailwindCSS.includeLanguages": {
+    "css": "CSS"
+  },
+  "tailwindCSS.experimental.classRegex": []
+}

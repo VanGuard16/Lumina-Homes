@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add any custom styles below */
+@layer utilities {
+    .glass {
+        @apply bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-20;
+    }
+}
