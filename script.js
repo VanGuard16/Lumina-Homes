@@ -702,7 +702,9 @@ function openModal(propertyId) {
             <!-- Agent Info -->
             <div class="bg-slate-50 rounded-xl p-6 mb-8">
                 <h3 class="text-xl font-bold text-slate-900 mb-4">Listed by</h3>
-                <div class="flex items-center gap-4">
+                <div class="flex flex-col md:flex-row items-start md:items-center gap-4 justify-between">
+                <!-- Avatar + Name -->
+                <div class="flex items-center gap-4 w-full md:w-auto">
                     <div class="w-12 h-12 rounded-full bg-slate-600 flex items-center justify-center text-lg font-bold text-white">
                         ${property.agent.split(' ').map(n => n[0]).join('')}
                     </div>
@@ -710,11 +712,13 @@ function openModal(propertyId) {
                         <div class="font-semibold text-slate-900">${property.agent}</div>
                         <div class="text-slate-600">Licensed Real Estate Agent</div>
                     </div>
-                    <div class="ml-auto">
-                        <button class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
-                            Contact Agent
-                        </button>
-                    </div>
+                </div>
+
+                <!-- Contact Button -->
+                <div class="w-full md:w-auto mt-2 md:mt-0">
+                    <button class="w-full md:w-auto bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                        Contact Agent
+                    </button>
                 </div>
             </div>
 
