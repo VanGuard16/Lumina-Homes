@@ -49,7 +49,7 @@
         <div class="relative max-w-7xl px-6 py-20 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white capitalize">Your dream home is closer than you think</h1>
             <p class="text-lg md:text-xl mb-8 text-white">Discover thousands of listings, from modern downtown apartments to spacious suburdan homes. Our expert agents guide you every step of the way, because the right space changes everything.</p>
-            <a href="#services" class="inline-block bg-dark text-white font-semibold py-3 px-8 rounded-lg hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">Browse Listings</a>
+            <a href="#properties" class="inline-block bg-dark text-white font-semibold py-3 px-8 rounded-lg hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">Browse Listings</a>
         </div>
     </section>
 
@@ -131,27 +131,6 @@
 
             <div class="flex items-center gap-4">
                 <span class="text-sm text-slate-400" id="property-count">Loading...</span>
-
-                <!-- View Toggle -->
-                <div class="flex bg-white/5 border border-white/10 rounded-xl p-1 backdrop-blur-md">
-                    
-                    <button onclick="setView('grid')" id="grid-view"
-                        class="p-2 rounded-lg transition-all bg-white/10 text-white">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                        </svg>
-                    </button>
-
-                    <button onclick="setView('list')" id="list-view"
-                        class="p-2 rounded-lg text-slate-400 hover:bg-white/10 hover:text-white transition-all">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-
-                </div>
             </div>
         </div>
 
@@ -295,6 +274,26 @@
             </div>
         </div>
     </section>
+<!-- Property Details Modal -->
+<div id="property-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div class="flex items-center justify-center min-h-screen p-4">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="relative">
+                <!-- Close Button -->
+                <button onclick="closeModal()" class="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur rounded-full p-2 hover:bg-white transition-colors">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+                
+                <!-- Modal Content -->
+                <div id="modal-content">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

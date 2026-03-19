@@ -1,10 +1,11 @@
-        // Property Data Array
+// Property Data Array
 const properties = [
+    // 1–9 (already done, slightly cleaned)
     {
         id: 1,
-        title: "Modern Hillside Villa",
-        location: "Beverly Hills, CA",
-        price: 4500000,
+        title: "Ikoyi Luxury Villa",
+        location: "Ikoyi, Lagos",
+        price: 450000000,
         beds: 5,
         baths: 4.5,
         sqft: 4200,
@@ -13,13 +14,13 @@ const properties = [
         image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
         featured: true,
         new: true,
-        agent: "Sarah Mitchell"
+        agent: "Chinedu Okafor"
     },
     {
         id: 2,
-        title: "Downtown Penthouse",
-        location: "Manhattan, NY",
-        price: 8200000,
+        title: "Lekki Phase 1 Penthouse",
+        location: "Lekki, Lagos",
+        price: 820000000,
         beds: 3,
         baths: 3,
         sqft: 2800,
@@ -28,112 +29,429 @@ const properties = [
         image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
         featured: true,
         new: false,
-        agent: "James Chen"
+        agent: "Amaka Eze"
     },
     {
         id: 3,
-        title: "Seaside Retreat",
-        location: "Malibu, CA",
-        price: 12500,
-        beds: 4,
-        baths: 3,
-        sqft: 3200,
-        type: "house",
-        status: "rent",
-        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-        featured: false,
-        new: true,
-        agent: "Emma Wilson"
-    },
-    {
-        id: 4,
-        title: "Historic Brownstone",
-        location: "Boston, MA",
-        price: 3200000,
-        beds: 4,
-        baths: 3.5,
-        sqft: 3600,
-        type: "house",
-        status: "sale",
-        image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
-        featured: false,
-        new: false,
-        agent: "Michael Brown"
-    },
-    {
-        id: 5,
-        title: "Luxury Condo",
-        location: "Miami Beach, FL",
-        price: 2100000,
-        beds: 2,
-        baths: 2,
-        sqft: 1800,
-        type: "apartment",
-        status: "sale",
-        image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
-        featured: true,
-        new: true,
-        agent: "Isabella Garcia"
-    },
-    {
-        id: 6,
-        title: "Mountain Lodge",
-        location: "Aspen, CO",
-        price: 8900000,
-        beds: 6,
-        baths: 5,
-        sqft: 5500,
-        type: "villa",
-        status: "sale",
-        image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-        featured: false,
-        new: false,
-        agent: "David Park"
-    },
-    {
-        id: 7,
-        title: "Waterfront Apartment",
-        location: "Seattle, WA",
-        price: 8500,
+        title: "Victoria Island Seaside Apartment",
+        location: "Victoria Island, Lagos",
+        price: 125000,
         beds: 2,
         baths: 2,
         sqft: 1400,
         type: "apartment",
         status: "rent",
-        image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
         featured: false,
         new: true,
-        agent: "Lisa Anderson"
+        agent: "Funke Adeyemi"
+    },
+    {
+        id: 4,
+        title: "Banana Island Waterfront Home",
+        location: "Banana Island, Lagos",
+        price: 3200000000,
+        beds: 6,
+        baths: 5,
+        sqft: 5500,
+        type: "villa",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+        featured: true,
+        new: false,
+        agent: "Emeka Obi"
+    },
+    {
+        id: 5,
+        title: "Surulere Family House",
+        location: "Surulere, Lagos",
+        price: 210000000,
+        beds: 4,
+        baths: 3,
+        sqft: 2200,
+        type: "house",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+        featured: false,
+        new: true,
+        agent: "Tunde Adebayo"
+    },
+    {
+        id: 6,
+        title: "Lekki Garden Apartment",
+        location: "Lekki, Lagos",
+        price: 8500000,
+        beds: 2,
+        baths: 2,
+        sqft: 1200,
+        type: "apartment",
+        status: "rent",
+        image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+        featured: false,
+        new: false,
+        agent: "Ifeoma Nwosu"
+    },
+    {
+        id: 7,
+        title: "Ajah Waterfront Duplex",
+        location: "Ajah, Lagos",
+        price: 45000000,
+        beds: 3,
+        baths: 3,
+        sqft: 2500,
+        type: "house",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80",
+        featured: true,
+        new: true,
+        agent: "Segun Balogun"
     },
     {
         id: 8,
-        title: "Garden Estate",
-        location: "Greenwich, CT",
+        title: "Ikeja Modern Apartment",
+        location: "Ikeja, Lagos",
         price: 5600000,
-        beds: 5,
-        baths: 4,
-        sqft: 4800,
-        type: "house",
-        status: "sale",
+        beds: 2,
+        baths: 2,
+        sqft: 1100,
+        type: "apartment",
+        status: "rent",
         image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
-        featured: true,
+        featured: false,
         new: false,
-        agent: "Robert Taylor"
+        agent: "Ngozi Okeke"
     },
     {
         id: 9,
-        title: "Skyline Penthouse",
-        location: "Chicago, IL",
-        price: 4500000,
+        title: "Victoria Island Executive Penthouse",
+        location: "Victoria Island, Lagos",
+        price: 450000000,
         beds: 3,
         baths: 3.5,
         sqft: 3100,
         type: "penthouse",
         status: "sale",
         image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
+        featured: true,
+        new: true,
+        agent: "Oluwaseun Adekunle"
+    },
+
+    // 10–30 (new additions)
+    {
+        id: 10,
+        title: "Lekki Phase 2 Luxury Villa",
+        location: "Lekki, Lagos",
+        price: 950000000,
+        beds: 5,
+        baths: 4,
+        sqft: 4000,
+        type: "villa",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        featured: true,
+        new: true,
+        agent: "Chika Umeh"
+    },
+    {
+        id: 11,
+        title: "Ikoyi Seafront Penthouse",
+        location: "Ikoyi, Lagos",
+        price: 1200000000,
+        beds: 4,
+        baths: 3.5,
+        sqft: 3500,
+        type: "penthouse",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1621878502826-47c6eb83998d?w=800&q=80",
+        featured: true,
+        new: false,
+        agent: "Bola Akinola"
+    },
+    {
+        id: 12,
+        title: "Victoria Island Studio Apartment",
+        location: "Victoria Island, Lagos",
+        price: 3500000,
+        beds: 1,
+        baths: 1,
+        sqft: 600,
+        type: "apartment",
+        status: "rent",
+        image: "https://images.unsplash.com/photo-1621054392990-46c12345b01e?w=800&q=80",
         featured: false,
         new: true,
-        agent: "Jennifer Lee"
+        agent: "Emmanuel Okoye"
+    },
+    {
+        id: 13,
+        title: "Banana Island Ultra Luxury Villa",
+        location: "Banana Island, Lagos",
+        price: 4000000000,
+        beds: 7,
+        baths: 6,
+        sqft: 7000,
+        type: "villa",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1600614769424-0b7c6f4f0042?w=800&q=80",
+        featured: true,
+        new: false,
+        agent: "Adesola Adebayo"
+    },
+    {
+        id: 14,
+        title: "Surulere Townhouse",
+        location: "Surulere, Lagos",
+        price: 85000000,
+        beds: 3,
+        baths: 2.5,
+        sqft: 1800,
+        type: "house",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        featured: false,
+        new: true,
+        agent: "Taiwo Afolabi"
+    },
+    {
+        id: 15,
+        title: "Lekki Garden Duplex",
+        location: "Lekki, Lagos",
+        price: 35000000,
+        beds: 4,
+        baths: 3,
+        sqft: 2600,
+        type: "house",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80",
+        featured: false,
+        new: false,
+        agent: "Chimamanda Obi"
+    },
+    {
+        id: 16,
+        title: "Ikeja Executive Apartment",
+        location: "Ikeja, Lagos",
+        price: 7500000,
+        beds: 2,
+        baths: 2,
+        sqft: 1000,
+        type: "apartment",
+        status: "rent",
+        image: "https://images.unsplash.com/photo-1621878502826-47c6eb83998d?w=800&q=80",
+        featured: false,
+        new: true,
+        agent: "Gbenga Lawal"
+    },
+    {
+        id: 17,
+        title: "Ajah Luxury Duplex",
+        location: "Ajah, Lagos",
+        price: 65000000,
+        beds: 4,
+        baths: 3.5,
+        sqft: 3000,
+        type: "house",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+        featured: true,
+        new: true,
+        agent: "Oluchi Nnaji"
+    },
+    {
+        id: 18,
+        title: "Victoria Island High-Rise Apartment",
+        location: "Victoria Island, Lagos",
+        price: 12000000,
+        beds: 3,
+        baths: 2,
+        sqft: 1500,
+        type: "apartment",
+        status: "rent",
+        image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+        featured: false,
+        new: false,
+        agent: "Tayo Olatunji"
+    },
+    {
+        id: 19,
+        title: "Lekki Oceanfront Villa",
+        location: "Lekki, Lagos",
+        price: 980000000,
+        beds: 6,
+        baths: 5,
+        sqft: 5000,
+        type: "villa",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        featured: true,
+        new: false,
+        agent: "Bukola Adeoye"
+    },
+    {
+        id: 20,
+        title: "Ikoyi Modern Apartment",
+        location: "Ikoyi, Lagos",
+        price: 10000000,
+        beds: 3,
+        baths: 2,
+        sqft: 1300,
+        type: "apartment",
+        status: "rent",
+        image: "https://images.unsplash.com/photo-1621054392990-46c12345b01e?w=800&q=80",
+        featured: false,
+        new: true,
+        agent: "Yemi Oladipo"
+    },
+    {
+        id: 21,
+        title: "Banana Island Mansion",
+        location: "Banana Island, Lagos",
+        price: 5000000000,
+        beds: 8,
+        baths: 7,
+        sqft: 9000,
+        type: "villa",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1600614769424-0b7c6f4f0042?w=800&q=80",
+        featured: true,
+        new: false,
+        agent: "Ifedayo Adekunle"
+    },
+    {
+        id: 22,
+        title: "Surulere Compact House",
+        location: "Surulere, Lagos",
+        price: 65000000,
+        beds: 3,
+        baths: 2,
+        sqft: 1700,
+        type: "house",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        featured: false,
+        new: true,
+        agent: "Morayo Bello"
+    },
+    {
+        id: 23,
+        title: "Ikeja Family Apartment",
+        location: "Ikeja, Lagos",
+        price: 8000000,
+        beds: 2,
+        baths: 2,
+        sqft: 1100,
+        type: "apartment",
+        status: "rent",
+        image: "https://images.unsplash.com/photo-1621878502826-47c6eb83998d?w=800&q=80",
+        featured: false,
+        new: false,
+        agent: "Kemi Ajayi"
+    },
+    {
+        id: 24,
+        title: "Lekki Hills Villa",
+        location: "Lekki, Lagos",
+        price: 900000000,
+        beds: 5,
+        baths: 4,
+        sqft: 4300,
+        type: "villa",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+        featured: true,
+        new: true,
+        agent: "Adebayo Falola"
+    },
+    {
+        id: 25,
+        title: "Victoria Island Modern Duplex",
+        location: "Victoria Island, Lagos",
+        price: 650000000,
+        beds: 4,
+        baths: 3.5,
+        sqft: 3200,
+        type: "house",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+        featured: true,
+        new: false,
+        agent: "Chioma Nwankwo"
+    },
+    {
+        id: 26,
+        title: "Ajah Coastal House",
+        location: "Ajah, Lagos",
+        price: 55000000,
+        beds: 3,
+        baths: 2.5,
+        sqft: 2400,
+        type: "house",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        featured: false,
+        new: true,
+        agent: "Obinna Chukwu"
+    },
+    {
+        id: 27,
+        title: "Ikeja Executive Penthouse",
+        location: "Ikeja, Lagos",
+        price: 150000000,
+        beds: 3,
+        baths: 3,
+        sqft: 2800,
+        type: "penthouse",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1621054392990-46c12345b01e?w=800&q=80",
+        featured: true,
+        new: false,
+        agent: "Tosin Afolabi"
+    },
+    {
+        id: 28,
+        title: "Lekki Oceanview Apartment",
+        location: "Lekki, Lagos",
+        price: 10000000,
+        beds: 2,
+        baths: 2,
+        sqft: 1200,
+        type: "apartment",
+        status: "rent",
+        image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+        featured: false,
+        new: true,
+        agent: "Aisha Bello"
+    },
+    {
+        id: 29,
+        title: "Victoria Island Luxury Villa",
+        location: "Victoria Island, Lagos",
+        price: 1200000000,
+        beds: 5,
+        baths: 4.5,
+        sqft: 4500,
+        type: "villa",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1600614769424-0b7c6f4f0042?w=800&q=80",
+        featured: true,
+        new: false,
+        agent: "Seyi Adewale"
+    },
+    {
+        id: 30,
+        title: "Banana Island Contemporary Mansion",
+        location: "Banana Island, Lagos",
+        price: 4800000000,
+        beds: 7,
+        baths: 6,
+        sqft: 7500,
+        type: "villa",
+        status: "sale",
+        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        featured: true,
+        new: true,
+        agent: "Ifeanyi Uzo"
     }
 ];
 // State
@@ -149,12 +467,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Format currency
 function formatPrice(price, status) {
     if (status === 'rent') {
-        return `$${price.toLocaleString()}/mo`;
+        return `₦${price.toLocaleString()}/mo`;
     }
     if (price >= 1000000) {
-        return `$${(price / 1000000).toFixed(2)}M`;
+        return `₦${(price / 1000000).toFixed(2)}M`;
     }
-    return `$${(price / 1000).toFixed(0)}k`;
+    return `₦${(price / 1000).toFixed(0)}k`;
 }
     // Render Filters
 function renderFilters() {
@@ -240,7 +558,7 @@ function renderProperties() {
             <!-- Hover overlay -->
             <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div class="flex items-center justify-between text-white">
-                    <span class="font-semibold">View Details</span>
+                    <span onclick="openModal(${property.id})" class="font-semibold cursor-pointer">View Details</span>
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                     </svg>
@@ -315,6 +633,144 @@ function updateCount() {
 function loadMore() {
     visibleCount += 3;
     renderProperties();
+}
+
+// Modal Functions
+function openModal(propertyId) {
+    const property = properties.find(p => p.id === propertyId);
+    if (!property) return;
+
+    const modal = document.getElementById('property-modal');
+    const content = document.getElementById('modal-content');
+
+    content.innerHTML = `
+        <!-- Hero Image -->
+        <div class="relative h-96">
+            <img src="${property.image}" alt="${property.title}" class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 flex gap-2">
+                ${property.new ? '<span class="px-3 py-1 bg-green-500 text-white text-xs font-bold rounded-full uppercase tracking-wider">New</span>' : ''}
+                ${property.featured ? '<span class="px-3 py-1 bg-amber-500 text-white text-xs font-bold rounded-full uppercase tracking-wider">Featured</span>' : ''}
+            </div>
+            <div class="absolute bottom-4 left-4 right-4">
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h1 class="text-3xl font-bold text-white mb-2">${property.title}</h1>
+                        <p class="text-white/90 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            ${property.location}
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-3xl font-bold text-emerald-400">${formatPrice(property.price, property.status)}</p>
+                        <span class="px-3 py-1 rounded-full ${property.status === 'sale' ? 'bg-blue-600 text-white' : 'bg-purple-600 text-white'} text-xs font-medium uppercase">
+                            For ${property.status}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details -->
+        <div class="p-8">
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-6 mb-8">
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-slate-900 mb-1">${property.beds}</div>
+                    <div class="text-slate-600">Bedrooms</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-slate-900 mb-1">${property.baths}</div>
+                    <div class="text-slate-600">Bathrooms</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-slate-900 mb-1">${property.sqft.toLocaleString()}</div>
+                    <div class="text-slate-600">Sq Ft</div>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-slate-900 mb-4">Description</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Discover this exceptional ${property.type} in ${property.location}. This stunning property offers ${property.beds} spacious bedrooms and ${property.baths} modern bathrooms, spanning ${property.sqft.toLocaleString()} square feet of luxurious living space. Perfect for those seeking comfort, style, and convenience in one of Lagos's most desirable locations.
+                </p>
+            </div>
+
+            <!-- Agent Info -->
+            <div class="bg-slate-50 rounded-xl p-6 mb-8">
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Listed by</h3>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-slate-600 flex items-center justify-center text-lg font-bold text-white">
+                        ${property.agent.split(' ').map(n => n[0]).join('')}
+                    </div>
+                    <div>
+                        <div class="font-semibold text-slate-900">${property.agent}</div>
+                        <div class="text-slate-600">Licensed Real Estate Agent</div>
+                    </div>
+                    <div class="ml-auto">
+                        <button class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                            Contact Agent
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Amenities -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Amenities</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-slate-600">Air Conditioning</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-slate-600">Parking</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-slate-600">Security</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-slate-600">Gym</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-slate-600">Pool</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span class="text-slate-600">Garden</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    const modal = document.getElementById('property-modal');
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
 }
 
 // Mobile Menu Toggle
