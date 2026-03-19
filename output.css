@@ -672,6 +672,10 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -695,10 +699,6 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .mr-0 {
@@ -1720,6 +1720,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -1731,10 +1739,6 @@ video {
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:block {
-    display: block;
   }
 
   .md\:flex {

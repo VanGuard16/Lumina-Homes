@@ -148,7 +148,7 @@ const properties = [
         sqft: 4000,
         type: "villa",
         status: "sale",
-        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
         featured: true,
         new: true,
         agent: "Chika Umeh"
@@ -163,7 +163,7 @@ const properties = [
         sqft: 3500,
         type: "penthouse",
         status: "sale",
-        image: "https://images.unsplash.com/photo-1621878502826-47c6eb83998d?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80",
         featured: true,
         new: false,
         agent: "Bola Akinola"
@@ -178,7 +178,7 @@ const properties = [
         sqft: 600,
         type: "apartment",
         status: "rent",
-        image: "https://images.unsplash.com/photo-1621054392990-46c12345b01e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
         featured: false,
         new: true,
         agent: "Emmanuel Okoye"
@@ -193,7 +193,7 @@ const properties = [
         sqft: 7000,
         type: "villa",
         status: "sale",
-        image: "https://images.unsplash.com/photo-1600614769424-0b7c6f4f0042?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
         featured: true,
         new: false,
         agent: "Adesola Adebayo"
@@ -208,7 +208,7 @@ const properties = [
         sqft: 1800,
         type: "house",
         status: "sale",
-        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=800&q=80",
         featured: false,
         new: true,
         agent: "Taiwo Afolabi"
@@ -238,7 +238,7 @@ const properties = [
         sqft: 1000,
         type: "apartment",
         status: "rent",
-        image: "https://images.unsplash.com/photo-1621878502826-47c6eb83998d?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600566752229-250ed79470f8?w=800&q=80",
         featured: false,
         new: true,
         agent: "Gbenga Lawal"
@@ -283,7 +283,7 @@ const properties = [
         sqft: 5000,
         type: "villa",
         status: "sale",
-        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80",
         featured: true,
         new: false,
         agent: "Bukola Adeoye"
@@ -298,7 +298,7 @@ const properties = [
         sqft: 1300,
         type: "apartment",
         status: "rent",
-        image: "https://images.unsplash.com/photo-1621054392990-46c12345b01e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=800&q=80",
         featured: false,
         new: true,
         agent: "Yemi Oladipo"
@@ -313,7 +313,7 @@ const properties = [
         sqft: 9000,
         type: "villa",
         status: "sale",
-        image: "https://images.unsplash.com/photo-1600614769424-0b7c6f4f0042?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
         featured: true,
         new: false,
         agent: "Ifedayo Adekunle"
@@ -328,7 +328,7 @@ const properties = [
         sqft: 1700,
         type: "house",
         status: "sale",
-        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800&q=80",
         featured: false,
         new: true,
         agent: "Morayo Bello"
@@ -343,7 +343,7 @@ const properties = [
         sqft: 1100,
         type: "apartment",
         status: "rent",
-        image: "https://images.unsplash.com/photo-1621878502826-47c6eb83998d?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600566752229-250ed79470f8?w=800&q=80",
         featured: false,
         new: false,
         agent: "Kemi Ajayi"
@@ -388,7 +388,7 @@ const properties = [
         sqft: 2400,
         type: "house",
         status: "sale",
-        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80",
         featured: false,
         new: true,
         agent: "Obinna Chukwu"
@@ -403,7 +403,7 @@ const properties = [
         sqft: 2800,
         type: "penthouse",
         status: "sale",
-        image: "https://images.unsplash.com/photo-1621054392990-46c12345b01e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&q=80",
         featured: true,
         new: false,
         agent: "Tosin Afolabi"
@@ -433,7 +433,7 @@ const properties = [
         sqft: 4500,
         type: "villa",
         status: "sale",
-        image: "https://images.unsplash.com/photo-1600614769424-0b7c6f4f0042?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
         featured: true,
         new: false,
         agent: "Seyi Adewale"
@@ -448,7 +448,7 @@ const properties = [
         sqft: 7500,
         type: "villa",
         status: "sale",
-        image: "https://images.unsplash.com/photo-1618222548982-ffcd6c8f574e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
         featured: true,
         new: true,
         agent: "Ifeanyi Uzo"

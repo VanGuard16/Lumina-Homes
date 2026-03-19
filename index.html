@@ -71,7 +71,7 @@
                         </div>
                     </div>
                     <!-- Center badge -->
-                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 text-white w-24 h-24 rounded-full flex items-center justify-center shadow-2xl">
+                    <div class="absolute inset-0 m-auto bg-gray-800 text-white w-24 h-24 rounded-full flex items-center justify-center shadow-2xl">
                         <span class="font-display font-bold text-center text-sm leading-tight">Since<br/>2010</span>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
             </h2>
 
             <div class="flex items-center gap-4">
-                <span class="text-sm text-slate-400" id="property-count">Loading...</span>
+                <span class="text-sm text-slate-400" id="property-count">30 Properties Found</span>
             </div>
         </div>
 
@@ -204,8 +204,8 @@
     <!-- Footer -->
     <section class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl px-6 mx-auto">
-            <div class="grid md:grid-cols-5 gap-8 mb-8">
-                <div class="col-span-2">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
+                <div class="md:col-span-2">
                     <img src="image/logo-1.png" alt="Lumina logo" class="h-8 mb-4">
                     <p class="text-gray-300 mb-4">We help you find the perfect property with ease and confidence. Whether you're looking for your dream home or a smart investment, we're here to guide you every step of the way.</p>
                     <div class="flex space-x-4">
@@ -223,7 +223,7 @@
                         </a>
                     </div>
                 </div>
-                <div>
+                <div class="md:col-span-1">
                     <h1 class="text-xl font-bold mb-4">Contact Us</h1>
                     <p class="text-sm text-gray-300 mb-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 inline mr-2">
@@ -242,18 +242,20 @@
                         </svg>
                         08148224340</p>
                 </div>
-                <div>
-                    <h1 class="text-xl font-bold mb-4">Quick Links</h1>
-                    <a href="#" class="block text-gray-300 hover:text-white transition-colors mb-2">Home</a>
-                    <a href="#about-us" class="block text-gray-300 hover:text-white transition-colors mb-2">About</a>
-                    <a href="#properties" class="block text-gray-300 hover:text-white transition-colors mb-2">Property</a>
-                    <a href="#contact-us" class="block text-gray-300 hover:text-white transition-colors mb-2">Contact</a>
-                </div>
-                <div class="col-auto">
-                    <h1 class="text-xl font-bold mb-4">Support</h1>
-                    <p class="text-gray-300 mb-2">FAQs</p>
-                    <p class="text-gray-300 mb-2">Privacy Policy</p>
-                    <p class="text-gray-300 mb-2">Terms & Conditions</p>
+                <div class="grid grid-cols-2 md:col-span-2 gap-8">
+                    <div>
+                        <h1 class="text-xl font-bold mb-4">Quick Links</h1>
+                        <a href="#" class="block text-gray-300 hover:text-white transition-colors mb-2">Home</a>
+                        <a href="#about-us" class="block text-gray-300 hover:text-white transition-colors mb-2">About</a>
+                        <a href="#properties" class="block text-gray-300 hover:text-white transition-colors mb-2">Property</a>
+                        <a href="#contact-us" class="block text-gray-300 hover:text-white transition-colors mb-2">Contact</a>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold mb-4">Support</h1>
+                        <p class="text-gray-300 mb-2">FAQs</p>
+                        <p class="text-gray-300 mb-2">Privacy Policy</p>
+                        <p class="text-gray-300 mb-2">Terms & Conditions</p>
+                    </div>
                 </div>
             </div>
             <!-- Newsletter -->
